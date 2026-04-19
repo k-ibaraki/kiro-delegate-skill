@@ -1,6 +1,6 @@
 # kiro-delegate
 
-Claude Code のスキル。`kiro-cli` にタスクを委譲して実行させます。
+AI エージェント向けスキル。`kiro-cli` にタスクを委譲して実行させます。
 
 ## 概要
 
@@ -8,6 +8,8 @@ Claude Code のスキル。`kiro-cli` にタスクを委譲して実行させま
 一般的なコーディングタスクで自動発動することはありません。
 
 ## インストール
+
+スキルディレクトリに配置してください。例（Claude Code の場合）：
 
 ```bash
 mkdir -p ~/.claude/skills/kiro-delegate
@@ -27,7 +29,7 @@ git clone https://github.com/k-ibaraki/kiro-delegate-skill.git ~/.claude/skills/
 
 ## 使い方
 
-Claude Code で以下のように指示するだけです：
+以下のように指示するだけです：
 
 ```
 この機能を kiro に実装してもらって
