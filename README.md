@@ -19,13 +19,6 @@ gh skill preview k-ibaraki/kiro-delegate-skill
 gh skill install k-ibaraki/kiro-delegate-skill
 ```
 
-`--agent` と `--scope` でインストール先を指定できます：
-
-```bash
-# Claude Code にユーザースコープでインストール
-gh skill install k-ibaraki/kiro-delegate-skill --agent claude-code --scope user
-```
-
 ### 手動
 
 ```bash
