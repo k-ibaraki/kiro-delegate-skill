@@ -12,8 +12,18 @@ AI エージェント向けスキル。`kiro-cli` にタスクを委譲して実
 ### GitHub CLI（推奨）
 
 ```bash
+# プレビュー
+gh skill preview k-ibaraki/kiro-delegate-skill
+
+# インストール
+gh skill install k-ibaraki/kiro-delegate-skill
+```
+
+`--agent` と `--scope` でインストール先を指定できます：
+
+```bash
 # Claude Code にユーザースコープでインストール
-gh skill install k-ibaraki/kiro-delegate-skill kiro-delegate --agent claude-code --scope user
+gh skill install k-ibaraki/kiro-delegate-skill --agent claude-code --scope user
 ```
 
 ### 手動
