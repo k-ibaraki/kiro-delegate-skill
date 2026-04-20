@@ -9,17 +9,18 @@ AI エージェント向けスキル。`kiro-cli` にタスクを委譲して実
 
 ## インストール
 
-スキルディレクトリに配置してください。例（Claude Code の場合）：
+### GitHub CLI（推奨）
 
 ```bash
-mkdir -p ~/.claude/skills/kiro-delegate
-cp SKILL.md ~/.claude/skills/kiro-delegate/
+# Claude Code にユーザースコープでインストール
+gh skill install k-ibaraki/kiro-delegate-skill kiro-delegate --agent claude-code --scope user
 ```
 
-または `git clone` して配置：
+### 手動
 
 ```bash
-git clone https://github.com/k-ibaraki/kiro-delegate-skill.git ~/.claude/skills/kiro-delegate
+git clone https://github.com/k-ibaraki/kiro-delegate-skill.git /tmp/kiro-delegate-skill
+cp -r /tmp/kiro-delegate-skill/kiro-delegate ~/.claude/skills/
 ```
 
 ## 前提条件
